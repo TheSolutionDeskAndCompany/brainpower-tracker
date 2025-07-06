@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Brain Check-In</title></head>
+<body>
+  <h2>Quick Check-In</h2>
+  <form id="checkinForm">
+    <label>Focus (1-10): <input name="focus" type="number" min="1" max="10" /></label><br/>
+    <label>Energy (1-10): <input name="energy" type="number" min="1" max="10" /></label><br/>
+    <label>Mood: <input name="mood" type="text" /></label><br/>
+    <label>Tasks Completed: <input name="tasks" type="text" /></label><br/>
+    <label>Meth Use (Y/N): <input name="meth" type="text" /></label><br/>
+    <label>Use Details: <input name="details" type="text" /></label><br/>
+    <label>Trigger/Context: <input name="trigger" type="text" /></label><br/>
+    <label>Notes: <textarea name="notes"></textarea></label><br/>
+    <button type="submit">Save</button>
+  </form>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "brainpower-tracker",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.brainpower.tracker",
+    "productName": "Brainpower Tracker",
+    "files": [
+      "**/*"
+    ],
+    "linux": {
+      "target": ["AppImage", "deb"],
+      "category": "Utility",
+      "icon": "assets/icon.png"
+    }
+  },
+  "dependencies": {
+    "csv-write-stream": "^2.0.0",
+    "electron": "^28.0.0"
+  }
+}
